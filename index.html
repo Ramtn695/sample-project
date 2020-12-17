@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Smart Store</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Font Awesome Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Header Part -->
+  <header>
+    <div class="container-fluid " id="home">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 ">
+          <i class="fa fa-envelope"><a href="mailto:enquiry@codewithme" class="link" aria-hidden="true">Submit your
+              Enquiry</a></i>
+          <i class="fa fa-phone" aria-hidden="true"><a href="tel:+9876543210" class="link">9876543210</a></i>
+        </div>
+        <div class="col-md-6 col-sm-12 text-right">
+          <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube-square btn-outline-danger"
+              aria-hidden="true"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://pintrest.com" target="_blank"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-dark " style="background-color: violet;">
+      <div class="container-fluid topbar">
+        <a class="navbar-brand" href="index.html">Smart Store</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Products</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item btn btn-outline-warning " href="#mobiles"><i
+                    class="fas fa-mobile-android">Mobiles</i></a>
+                <a class="dropdown-item btn btn-outline-warning" href="#laptops">Computers</a>
+                <a class="dropdown-item btn btn-outline-warning" href="#homeappl">Home Appliances</a>
+                <a class="dropdown-item btn btn-outline-warning" href="#other">Other Accesories</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search for Products">
+            <a href="#" class="btn btn-outline-light my-sm-0 btnrig" type="submit"><i class="fa fa-shopping-cart"
+                aria-hidden="true">My Cart</i></a>
+            <a href="#" class="btn btn-outline-success my-sm-0 btnrig" id="login" type="submit"><i class="fa fa-user-circle"
+                aria-hidden="true">Login</i></a>
+            <a href="#" class="btn btn-outline-danger my-sm-0 btnrig " type="submit"><i class="fa fa-user-plus"
+                aria-hidden="true">Register</i></a>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+   <!-- Login form on Click  -->
+        <div id="show" class="mt-3">
+            <form action="#" class="form-group" id="form">
+                <img src="images/avatar.jpg" alt="avatar" title="Profile Picture" class="img-thumbnail avatar" style="width: 100px;"><br>
+                <label for="Email">Email: <span style="color: red;">*</span></label>
+                <input type="text" class="form-control" name="email" placeholder="Enter Your Email-Id/Username" required>
+                <label for="Password">Password: <span style="color: red;">*</span></label>
+                <input type="password"  class="form-control password" name="password" placeholder="Enter Your Password" required id="password"><br>
+                <a href="#" class="link btn-outline-primary">Forgot Password</a><br><br>
+                <input type="submit" class="  form-control btn-outline-success " value="submit" style="width: fit-content; display: inline-block;">
+                <input type="reset" value="cancel" id="cancel" class=" btn-outline-danger  form-control "  style="width: fit-content; display: inline-block;"><br><br>
+                <p>No Account <a href="#" class="link btn-outline-primary">Register Us</a></p>
+            </form>
+        </div>
+  <!-- Carousel -->
+  <div id="products">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 mt-2" src="images/mobiles.jpg" alt="Mobiles" height="600">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 mt-2" src="images/laptops.jpg" alt="Laptops" height="600">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 mt-2" src="images/others.jpg" alt="Other" height="600">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- Products -->
+  <div id="mobiles" class="container-fluid mt-2">
+    <h2>Mobiles</h2>
+    <figure>
+      <img src="images/and.png" alt="Android" height="400" width="300">
+      <figcaption><a href="#" class="btn btn-outline-danger">Android Mobiles</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/iphone.png" alt="Iphone" height="400" width="300">
+      <figcaption><a href="#" class="btn btn-outline-primary">Iphone</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/tab.png" alt="Tabs" height="400" width="300">
+      <figcaption><a href="#" class="btn btn-outline-light">Tab</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/dualscreen.png" alt="dual screen mobiles" height="400">
+      <figcaption><a href="#" class="btn btn-outline-danger">dual screen mobiles</a></figcaption>
+    </figure>
+  </div>
+  <div id="laptops" class="container-fluid mt-2">
+    <h2>Computers</h2>
+    <figure>
+      <img src="images/desk1.png" alt="Desktop" height="400" width="300">
+      <figcaption><a href="#" class="btn btn-outline-light">Desktop</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/desk2.png" alt="Desktop" height="400" width="300">
+      <figcaption><a href="#" class="btn btn-outline-primary">Desktop</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/lap.png" alt="Laptop" height="400" width="300">
+      <figcaption><a href="#" class="btn btn-outline-dark">Laptop</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/fliplap.png" alt="Flip Laptop" height="400" width="300">
+      <figcaption><a href="#" class="btn btn-outline-primary"> Flip Laptop</a></figcaption>
+    </figure>
+  </div>
+  <div id="homeappl" class="container-fluid mt-2">
+    <h2>Home Appliances</h2>
+    <figure>
+      <img src="images/ac.png" alt="AC" width="300">
+      <figcaption><a href="#" class="btn btn-outline-secondary">AC</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/wash.png" alt="Washing Machine" height="300" width="300">
+      <figcaption><a href="#" class="btn btn-outline-warning">Washing Machine</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/fridge.png" alt="Fridge" height="300" width="300">
+      <figcaption><a href="#" class="btn btn-outline-light">Fridge</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/tv.png" alt="TV" height="200" width="300">
+      <figcaption><a href="#" class="btn btn-outline-info">TV</a></figcaption>
+    </figure>
+  </div>
+  <div id="other" class="container-fluid mt-2">
+    <h2>Other Accessories</h2>
+    <figure>
+      <img src="images/speak.png" alt="speaker" width="300">
+      <figcaption><a href="#" class="btn btn-outline-info">Speaker</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/head.png" alt="Headset" height="300" width="200">
+      <figcaption><a href="#" class="btn btn-outline-warning">Headset</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/store.png" alt="Storage" height="300" width="200">
+      <figcaption><a href="#" class="btn btn-outline-light">Storage</a></figcaption>
+    </figure>
+    <figure>
+      <img src="images/cam.png" alt="Cameras" width="300">
+      <figcaption><a href="#" class="btn btn-primary">Cameras</a></figcaption>
+    </figure>
+  </div>
+  <!-- contact us -->
+  <div class="container-fluid mt-2 form">
+    <div class="row">
+      <div class="col-md-6 info">
+        <h1>Please ask us free in case of any Doubts.. <br>
+          Reach Us for <b>Attractive offers!!</b>
+        </h1>
+      </div>
+      <div class="col-md-6  container-fluid" id="contact">
+        <div class="form-group">
+          <form action="#" method="post">
+            <label for="">Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name" required>
+            <label for="">Email</label>
+            <input type="email" class="form-control" name="name" id="email" placeholder="Enter Your Email" required>
+            <label for="Mobile">Mobile</label>
+            <input type="number" name="mobile" id="mobile" class="form-control" placeholder="Enter Mobile Number"
+              required>
+            <label for="message">Leave Your Message</label>
+            <textarea class="form-control" name="" id="" rows="3"></textarea>
+            <input type="submit" class="btn-primary mt-2" value="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer here -->
+  <div class="container-fluid bg-dark fixed foot">
+    <footer>
+      <div class="row">
+        <div class="col-md-3" id="about">
+          <h5>About Us</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, possimus cupiditate quasi error
+            voluptatibus tenetur voluptatem consequuntur eius perferendis ad? Rem neque eum tenetur obcaecati officia
+            aliquam praesentium explicabo. Culpa!</p>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><i class="fa fa-clock-o" aria-hidden="true">Working Hours: <b>10:00 AM to 10:00 PM</b> </i></li>
+            <li><i class="fa fa-calendar" aria-hidden="true">Working Days: <b>Sunday to Saturday</b></i></li>
+            <li><i class="fa fa-envelope"><a href="mailto:enquiry@codewithme" class="link" aria-hidden="true">Submit
+                  your
+                  Enquiry</a></i></li>
+            <li><i class="fa fa-phone" aria-hidden="true"><a href="tel:+9876543210" class="link">9876543210
+                </a></i></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order Details</a></li>
+            <li><a href="#">Our Locations</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Head Office</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12701.748066853279!2d80.23554273485182!3d13.041724691483873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526655a5da2371%3A0x4954f49743f04af0!2sT.%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1607183670297!5m2!1sen!2sin"
+            width="420" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 ">
+            <i class="fa fa-copyright" aria-hidden="true">Smart Store</i>
+            <a href="#">Terms & Conditions</a>
+          </div>
+          <div class="col-md-6 col-sm-12 text-right">
+            <span>Search for Us</span>
+            <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-official"
+                aria-hidden="true">Facebook</i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube-square btn-outline-danger"
+                aria-hidden="true">Youtube</i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"
+                aria-hidden="true">Instagram</i></a>
+            <a href="https://pintrest.com" target="_blank"><i class="fa fa-pinterest-square"
+                aria-hidden="true">Pinterest</i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square"
+                aria-hidden="true">Twitter</i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
