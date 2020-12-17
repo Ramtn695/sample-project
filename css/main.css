@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+#products {
+  box-shadow: 0 5px 10px red;
+}
+h2 {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+#mobiles {
+  background-image: linear-gradient(
+    45deg,
+    rgb(172, 35, 35),
+    rgb(0, 38, 252),
+    rgb(0, 255, 21)
+  );
+  box-shadow: 0 5px 10px rgb(13, 13, 17);
+}
+#laptops {
+  background-image: linear-gradient(
+    45deg,
+    rgb(60, 255, 0),
+    #ff676a,
+    rgb(208, 255, 0)
+  );
+  box-shadow: 0 5px 10px red;
+}
+#other {
+  background-image: linear-gradient(45deg, rgb(0, 225, 255), lawngreen, blue);
+  box-shadow: 0 5px 10px rgb(24, 13, 13);
+}
+#homeappl {
+  background-image: linear-gradient(
+    45deg,
+    rgb(122, 209, 148),
+    rgb(252, 0, 84),
+    blue
+  );
+  box-shadow: 0 5px 10px red;
+}
+#mobiles figure,
+#laptops figure,
+#other figure,
+#homeappl figure {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+}
+.btnrig {
+  margin-left: 10px;
+}
+.form {
+  background-image: linear-gradient(
+    45deg,
+    rgb(92, 184, 119),
+    rgb(252, 0, 84),
+    rgb(20, 20, 182)
+  );
+  box-shadow: 0 5px 10px black;
+  font-weight: bold;
+  color: white;
+  height: fit-content;
+  padding: 10px;
+}
+.foot {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-image: linear-gradient(45deg, rgb(31, 12, 134), rgb(155, 27, 27), magenta);
+    color:white;
+  }
+footer div ul {
+  list-style-type: none;
+  padding: 10px;
+}
+footer div ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+footer div ul li:hover {
+  background-color: yellowgreen;
+}
+footer div ul li a {
+  text-decoration: none;
+  color: white;
+}
+#show{
+    background-image: radial-gradient(white,grey);
+    text-align: center;
+    color: red;
+    margin:10px auto;
+    top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 15px;
+	width: 50%;
+	height: fit-content;
+	border: 3px solid blue;
+	display: none;
+	position: fixed;
+	padding: 15px 20px;
+	z-index: 2;
+}
+.pop{
+  width: 20px;
+}
