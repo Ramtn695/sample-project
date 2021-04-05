@@ -109,6 +109,24 @@ footer div ul li a {
 	padding: 15px 20px;
 	z-index: 2;
 }
+
+#regform{
+  background-image: radial-gradient(white,grey);
+  text-align: center;
+  color: red;
+  margin:10px auto;
+  top: 0;
+left: 0;
+right: 0;
+padding: 10px 15px;
+width: 50%;
+height: fit-content;
+border: 3px solid blue;
+display: none;
+position: fixed;
+padding: 15px 20px;
+z-index: 2;
+}
 .pop{
   width: 20px;
 }
