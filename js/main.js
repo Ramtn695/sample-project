@@ -4,3 +4,9 @@ document.getElementById('login').addEventListener('click',()=>{
 document.getElementById('cancel').addEventListener('click',()=>{
     document.getElementById('show').style.display='none';
 })
+document.getElementById('register').addEventListener('click',()=>{
+    document.getElementById('regform').style.display='block';
+});
+document.getElementById('regcancel').addEventListener('click',()=>{
+    document.getElementById('regform').style.display='none';
+})
