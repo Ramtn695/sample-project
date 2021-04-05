@@ -69,30 +69,59 @@
             <input class="form-control mr-sm-2" type="text" placeholder="Search for Products">
             <a href="#" class="btn btn-outline-light my-sm-0 btnrig" type="submit"><i class="fa fa-shopping-cart"
                 aria-hidden="true">My Cart</i></a>
-            <a href="#" class="btn btn-outline-success my-sm-0 btnrig" id="login" type="submit"><i class="fa fa-user-circle"
-                aria-hidden="true">Login</i></a>
-            <a href="#" class="btn btn-outline-danger my-sm-0 btnrig " type="submit"><i class="fa fa-user-plus"
-                aria-hidden="true">Register</i></a>
+            <a href="#" class="btn btn-outline-success my-sm-0 btnrig" id="login" type="submit"><i
+                class="fa fa-user-circle" aria-hidden="true">Login</i></a>
+            <a href="#" class="btn btn-outline-danger my-sm-0 btnrig " id="register" type="submit"><i
+                class="fa fa-user-plus" aria-hidden="true">Register</i></a>
 
           </form>
         </div>
       </div>
     </nav>
   </header>
-   <!-- Login form on Click  -->
-        <div id="show" class="mt-3">
-            <form action="#" class="form-group" id="form">
-                <img src="images/avatar.jpg" alt="avatar" title="Profile Picture" class="img-thumbnail avatar" style="width: 100px;"><br>
-                <label for="Email">Email: <span style="color: red;">*</span></label>
-                <input type="text" class="form-control" name="email" placeholder="Enter Your Email-Id/Username" required>
-                <label for="Password">Password: <span style="color: red;">*</span></label>
-                <input type="password"  class="form-control password" name="password" placeholder="Enter Your Password" required id="password"><br>
-                <a href="#" class="link btn-outline-primary">Forgot Password</a><br><br>
-                <input type="submit" class="  form-control btn-outline-success " value="submit" style="width: fit-content; display: inline-block;">
-                <input type="reset" value="cancel" id="cancel" class=" btn-outline-danger  form-control "  style="width: fit-content; display: inline-block;"><br><br>
-                <p>No Account <a href="#" class="link btn-outline-primary">Register Us</a></p>
-            </form>
-        </div>
+  <!-- Login form on Click  -->
+  <div id="show" class="mt-3">
+    <form action="#" class="form-group" id="form">
+      <img src="images/avatar.jpg" alt="avatar" title="Profile Picture" class="img-thumbnail avatar"
+        style="width: 100px;"><br>
+      <label for="Email">Email: <span style="color: red;">*</span></label>
+      <input type="text" class="form-control" name="email" placeholder="Enter Your Email-Id/Username" required>
+      <label for="Password">Password: <span style="color: red;">*</span></label>
+      <input type="password" class="form-control password" name="password" placeholder="Enter Your Password" required
+        id="password"><br>
+      <a href="#" class="link btn-outline-primary">Forgot Password</a><br><br>
+      <input type="submit" class="  form-control btn-outline-success " value="submit"
+        style="width: fit-content; display: inline-block;">
+      <input type="reset" value="cancel" id="cancel" class=" btn-outline-danger  form-control "
+        style="width: fit-content; display: inline-block;"><br><br>
+      <p>No Account <a href="#reg" class="link btn-outline-primary">Register Us</a></p>
+    </form>
+  </div>
+  <!-- Register Form on Click -->
+  <div class="col-md-6 " id="regform">
+    <div class="form-group">
+      <form action="#" method="post">
+        <img src="images/avatar.jpg" alt="avatar" title="Profile Picture" class="img-thumbnail avatar"
+          style="width: 100px;"><br>
+        <label for="">Name<span style="color: red;">*</span></label>
+        <input type="text" class="form-control" name="name" id="regname" placeholder="Enter Your Name" required>
+        <label for="">Email<span style="color: red;">*</span></label>
+        <input type="email" class="form-control" name="name" id="regemail" placeholder="Enter Your Email" required>
+        <label for="Mobile">Mobile<span style="color: red;">*</span></label>
+        <input type="number" name="mobile" id="regmobile" class="form-control" placeholder="Enter Mobile Number"
+          required>
+        <label for="Password">Password: <span style="color: red;">*</span></label>
+        <input type="password" class="form-control password" name="password" placeholder="Enter Your Password" required
+          id="regpass"><br>
+        <label for="address">Address<span style="color: red;">*</span></label>
+        <textarea class="form-control" name="" id="" rows="3"></textarea><br><br>
+        <input type="submit" class="  form-control btn-outline-success " value="submit" id="regsubmit"
+          style="width: fit-content; display: inline-block;">
+        `<input type="reset" value="cancel" id="regcancel" class=" btn-outline-danger  form-control "
+          style="width: fit-content; display: inline-block;">
+      </form>
+    </div>
+  </div>
   <!-- Carousel -->
   <div id="products">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
